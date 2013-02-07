@@ -1,4 +1,4 @@
-MDON = require '../lib/mson'
+MSON = require '../lib/mson'
 
 bson = require 'bson'
 ObjectID = bson.BSONPure.ObjectID
@@ -17,9 +17,9 @@ expected = """
 {"_id":ObjectId("507f1f77bcf86cd799439011"),"title":"Super","related":[ObjectId("507f1f77bcf86cd799439011"),ObjectId("507f1f77bcf86cd799439012"),ObjectId("507f1f77bcf86cd799439013")],"owner":{"$ref":"groups","$id":"507f191e810c19729de860ea"},"updatedAt":{"$gte":ISODate("2012-02-07T18:32:42.692Z"),"$lte":ISODate("2013-02-07T18:32:42.692Z")}}
 """
 
-serialized = MDON.stringify original
-parsed = MDON.parseUnsafe serialized
-serializedAgain = MDON.stringify parsed
+serialized = MSON.stringify original
+parsed = MSON.parseUnsafe serialized
+serializedAgain = MSON.stringify parsed
 
 tests =
   "correct output": serialized is expected 

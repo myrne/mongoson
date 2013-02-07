@@ -4,8 +4,8 @@ DBRef = bson.BSONPure.DBRef
 
 ISODate = (ISODateString) -> new Date ISODateString
 
-module.exports = MDON = {}
-MDON.stringify = (value) ->
+module.exports = MSON = {}
+MSON.stringify = (value) ->
   JSON.stringify value # throws if object contains any circular references
   return undefined if typeof value is "function"
   return undefined if typeof value is "undefined"
@@ -19,7 +19,7 @@ MDON.stringify = (value) ->
   return stringifyPlainObject value if value.constructor.name is "Object"
   throw new error "Object contains value with unknown prototype '#{value.constructor.name}'"
 
-MDON.parseUnsafe = (value) ->
+MSON.parseUnsafe = (value) ->
   eval "(" + value + ")"
 
 stringifyPlainObject = (object) ->
@@ -29,7 +29,7 @@ stringifyPlainObject = (object) ->
 # (when it is found in an object) or censored to null (when it is found in an array).
 makeFieldLiterals = (object) ->
   for key, value of object when typeof value not in ["function","undefined"]
-    JSON.stringify(key) + ":" + MDON.stringify(value) 
+    JSON.stringify(key) + ":" + MSON.stringify(value) 
 
 # DBRefs have the form { $ref : <value>, $id : <value>, $db : <value> }
 # $db is optional. Field order matters.
@@ -43,4 +43,4 @@ stringifyDbRef = (dbRef) ->
   JSON.stringify refJSON
 
 stringifyArray = (array) ->
-  "[" + (MDON.stringify value for value in array).join(",") + "]"
+  "[" + (MSON.stringify value for value in array).join(",") + "]"
