@@ -10,7 +10,7 @@
     "ISODate",
     "DBRef"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "directories": {
     "lib": "./lib"
   },

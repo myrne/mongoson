@@ -4,7 +4,7 @@
 name: "mongoson"
 description: "MongoDB Shell Object Notation. Stringifies values so they can be pasted into the Mongo shell."
 keywords: ["mongodb","json","serializer","stringify","ObjectId","ISODate","DBRef"]
-version: "0.0.2"
+version: "0.0.3"
 directories:
   lib: "./lib"
 main: "lib/mson.js"
