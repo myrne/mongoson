@@ -13,7 +13,7 @@ dependencies:
   bson: "0.1.x"
 
 devDependencies:
-  "coffee-script": "1.4.x"  
+  "coffee-script": "1.4.x"
 
 engines:
   node: "0.8.x"
