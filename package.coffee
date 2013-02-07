@@ -1,7 +1,10 @@
+# npm install courier -g
+# courier
+
 name: "mongoson"
-description: "MongoDB Shell Object Notation. Stringify values so they can be pasted into the Mongo shell."
-keywords: ["mongodb","json","serializer","ObjectId","ISODate","DBRef"]
-version: "0.0.1"
+description: "MongoDB Shell Object Notation. Stringifies values so they can be pasted into the Mongo shell."
+keywords: ["mongodb","json","serializer","stringify","ObjectId","ISODate","DBRef"]
+version: "0.0.2"
 directories:
   lib: "./lib"
 main: "lib/mson.js"

@@ -1,15 +1,16 @@
 {
   "name": "mongoson",
-  "description": "MongoDB Shell Object Notation. Stringify values so they can be pasted into the Mongo shell.",
+  "description": "MongoDB Shell Object Notation. Stringifies values so they can be pasted into the Mongo shell.",
   "keywords": [
     "mongodb",
     "json",
     "serializer",
+    "stringify",
     "ObjectId",
     "ISODate",
     "DBRef"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "directories": {
     "lib": "./lib"
   },
