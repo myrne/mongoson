@@ -17,7 +17,7 @@ MSON.stringify = (value) ->
   return JSON.stringify value if typeof value isnt "object" # but rather, any primitive (number,string,boolean)
   return JSON.stringify value if value.constructor.name in ["Number","String","Boolean"]
   return stringifyPlainObject value if value.constructor.name is "Object"
-  throw new error "Object contains value with unknown prototype '#{value.constructor.name}'"
+  throw new Error "Object contains value with unknown prototype '#{value.constructor.name}'"
 
 MSON.parseUnsafe = (value) ->
   eval "(" + value + ")"
