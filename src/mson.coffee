@@ -34,7 +34,7 @@ makeFieldLiterals = (object) ->
 # DBRefs have the form { $ref : <value>, $id : <value>, $db : <value> }
 # $db is optional. Field order matters.
 # See: http://docs.mongodb.org/manual/applications/database-references/
-# See also: https://jira.mongodb.org/browse/SERVER-248 says $ref must come before $i
+# See also: https://jira.mongodb.org/browse/SERVER-248 says $ref must come before $id
 stringifyDbRef = (dbRef) ->
   refJSON = {}
   refJSON.$ref = dbRef.namespace
