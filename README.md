@@ -57,7 +57,8 @@ someQuery =
 You can then do
 
 ```coffee
-console.log MSON.stringify original
+MSON = require 'mongoson'
+console.log MSON.stringify someQuery
 ```
 
 Which gives
