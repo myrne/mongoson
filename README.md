@@ -1,4 +1,4 @@
-# mongoson: MongoDB Shell Object Notation
+# mongoson: MongoDB Shell Object Notation [![Build Status](https://travis-ci.org/meryn/mongoson.png?branch=master)](https://travis-ci.org/meryn/mongoson)
 
 `MSON.stringify` is an alternative for `JSON.stringify`. It serializes queries (and data to be inserted or updated) in such a way that they can be pasted into the Mongo shell, with no loss of information. ObjectIds, DBRefs and Dates are not converted to strings, so they'll keep working. 
 
