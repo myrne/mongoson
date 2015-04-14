@@ -22,8 +22,8 @@
     "coffee-script": "1.6.x"
   },
   "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
+    "node": ">=0.10",
+    "npm": ">=1.2"
   },
   "optionalDependencies": {},
   "author": "Meryn Stol <merynstol@gmail.com>",
