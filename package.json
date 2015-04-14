@@ -16,7 +16,7 @@
   },
   "main": "lib/mson.js",
   "dependencies": {
-    "bson": "0.1.x"
+    "bson": "0.3.x"
   },
   "devDependencies": {
     "coffee-script": "1.6.x"
