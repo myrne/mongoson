@@ -16,10 +16,10 @@
   },
   "main": "lib/mson.js",
   "dependencies": {
-    "bson": "0.3.x"
+    "bson": "~1.0.4"
   },
   "devDependencies": {
-    "coffee-script": "1.6.x"
+    "coffee-script": "~1.12.4"
   },
   "engines": {
     "node": ">=0.10",
